@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="littleidea.mp3" autoplay controls loop></audio>
+  <title>대학본부 문제1</title>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("daehak.jpg") no-repeat fixed center top green;
+      background-size: contain;
+    }
+  </style>
+  <script>
+    var right = "flame";
+  </script>
+  <script src="wsd.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>대학 본부</h2>
+    </div>
+  </header>
+  <section>
+    <p>
+      대학시절 학적기록이나 볼까 싶어, 대학본부로 향했다.<br>
+      개교기념일이라도 되는 건가, 안에는 아무도 없었고<br>
+      수상스런 모니터가 나를 끌어당겼다.
+    </p>
+    <p>
+      모니터에서는 무언가에 의해 나타나는 색을 보여주고 있다.<br>
+      무엇에 의해 저렇게 변한 것일까? (Answer Type : 영어)
+    </p><br>
+    <article>
+    <iframe src="" id="monitor" width="400" height="300" allowTransparency="true">버튼을 클릭하세요.</iframe><br>
+      <p>
+        <input type='button' onclick='document.getElementById("monitor").style.backgroundColor = "Plum";' value='K'>
+        <input type='button' onclick='document.getElementById("monitor").style.backgroundColor = "Green";' value='B'>
+        <input type='button' onclick='document.getElementById("monitor").style.backgroundColor = "MediumSeaGreen";' value='P'>
+        <input type='button' onclick='document.getElementById("monitor").style.backgroundColor = "Yellow";' value='Na'>
+        <input type='button' onclick='document.getElementById("monitor").style.backgroundColor = "Red";' value='Li'>
+      </p>
+    </article>
+
+    <details>
+      <summary>힌트</summary>
+      <p>화학 / 반응색</p>
+    </details>
+    <br>
+    <article>
+      <form name="question" id="ques" onsubmit="return false;">
+        <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+        <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+      </form>
+      <div id="next" style="display: none">
+        <a href="Story2.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+      </div>
+      <br>
+      <br>
+      <br>
+    </article>
+  </section>
+  <aside>
+    <p>진행도</p>
+    <p><progress value="7" max="16"></progress></p>
+    <figure>
+      <img src="center.png" width="280" height="175" onmouseover="this.src='centerb.png'" onmouseout="this.src='center.png'">
+    </figure>
+  </aside>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400">Music : littleidea - Bensound.com</th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 장우영(star7sss@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

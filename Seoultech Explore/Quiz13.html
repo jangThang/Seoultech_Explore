@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="littleidea.mp3" autoplay controls loop></audio>
+  <title>다빈치관 문제1</title>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("davin.jpg") no-repeat fixed center top green;
+      background-size: contain;
+    }
+  </style>
+  <script>
+    var right = "자화상";
+  </script>
+  <script src="wsd.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>다빈치관</h2>
+    </div>
+  </header>
+  <section>
+    <p>
+      시간도 남겠다. 오랜만에 다빈치관 전시실에 가봤다.<br>
+      다빈치관에는 신기한 작품들이 많았다.
+    </p>
+    <p>
+      렌티큘러 : 보는 시각에 따라 달라지는 그림<br>
+    </p>
+    <p>
+      다빈치관에는 오래된 명화들이 전시되어있었다.
+    </p><br>
+    <figure>
+      <iframe src="Quiz13-1.html" width="420" height="620"></iframe>
+      <iframe src="Quiz13-2.html" width="420" height="620"></iframe>
+    </figure>
+      <p>
+        이런 그림을 뭐라고 했더라?
+      </p>
+
+      <details>
+        <summary>힌트</summary>
+        <p>다빈치와 고흐</p>
+      </details>
+      <br>
+      <article>
+        <form name="question" id="ques" onsubmit="return false;">
+          <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+          <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+        </form>
+        <div id="next" style="display: none">
+          <a href="Story4.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+        </div>
+        <br>
+        <br>
+        <br>
+      </article>
+  </section>
+  <aside>
+    <p>진행도</p>
+    <p><progress value="13" max="16"></progress></p>
+    <figure>
+      <img src="davin.png" width="280" height="175" onmouseover="this.src='davinb.png'" onmouseout="this.src='davin.png'">
+    </figure>
+  </aside>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400">Music : littleidea - Bensound.com</th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 장우영(star7sss@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

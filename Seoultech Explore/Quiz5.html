@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="adventure.mp3" autoplay controls loop></audio>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("mugung.jpg") no-repeat fixed center top green;
+      background-size: contain;
+      text-align: center;
+    }
+
+
+    div div {
+      display: inline-block;
+      border: 3px solid deepskyblue;
+      background: gray;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+    }
+
+    @keyframes textAnimation {
+      0% {
+        color: red;
+      }
+
+      15% {
+        color: orange;
+      }
+
+      30% {
+        color: yellow;
+      }
+
+      45% {
+        color: green;
+      }
+
+      60% {
+        color: skyblue;
+      }
+
+      75% {
+        color: blue;
+      }
+
+      90% {
+        color: purple;
+      }
+
+      100% {
+        color: white;
+      }
+    }
+
+    @keyframes textAnimation1 {
+      0% {
+        color: green;
+      }
+
+      15% {
+        color: orange;
+      }
+
+      30% {
+        color: purple;
+      }
+
+      45% {
+        color: blue;
+      }
+
+      60% {
+        color: white;
+      }
+
+      75% {
+        color: skyblue;
+      }
+
+      90% {
+        color: yellow;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+
+    @keyframes textAnimation2 {
+      0% {
+        color: red;
+      }
+
+      15% {
+        color: orange;
+      }
+
+      30% {
+        color: white;
+      }
+
+      45% {
+        color: deepskyblue;
+      }
+
+      60% {
+        color: skyblue;
+      }
+
+      75% {
+        color: blue;
+      }
+
+      90% {
+        color: purple;
+      }
+
+      100% {
+        color: yellow;
+      }
+    }
+
+    #i {
+      animation-name: textAnimation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    #i1 {
+      animation-name: textAnimation1;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    #i2 {
+      animation-name: textAnimation2;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+  </style>
+  <script>
+    var right = "myth";
+  </script>
+  <script src="wsd.js"></script>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>무궁관</h2>
+    </div>
+  </header>
+  <section>
+    <article>
+    <p>결국 아무생각없이 옥상까지 올라왔다.<br>
+      밖에 나가서 경치를 보며 기분전환을 한다.<br>
+      문득 선배들 사이에서 오가던 미신이 떠오른다<br>
+    </p>
+    <div>
+      <div id="i">you</div>
+      <div id="i1">will</div>
+      <div id="i1">meet</div>
+      <div id="i">texi</div><br>
+      <div id="i2">make</div>
+      <div id="i1">sure</div>
+      <div id="i">who</div>
+      <div id="i2">you</div><br>
+      <div id="i">are</div>
+      <div id="i2">that</div>
+      <div id="i1">will</div>
+      <div id="i1">be</div><br>
+      <div id="i2">hard</div>
+      <div id="i1">trip</div>
+      <div id="i">good</div>
+      <div id="i">luck</div><br>
+    </div>
+  </article>
+    <details>
+      <summary>힌트</summary>
+      <p>1.답은 영어<br>2.rainbow<br>3.lost<br>4.initial</p>
+    </details>
+  </section>
+  <article>
+    <form name="question" id="ques" onsubmit="return false;">
+      <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+      <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+    </form>
+    <div id="next" style="display: none">
+      <a href="Quiz6.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+    </div><br><br><br>
+    </form>
+  </article>
+  <aside>
+    <p>진행도</p>
+    <progress value="5" max="16"></progress>
+    <figure>
+      <img src="mogoog.png" width="280" height="175" onmouseover="this.src='mogoogb.png'" onmouseout="this.src='mogoog.png'">
+    </figure>
+  </aside><br><br><br>
+  <hr>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400">Music : adventure - Bensound.com</th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 송승엽(thdtmdduqdhk@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

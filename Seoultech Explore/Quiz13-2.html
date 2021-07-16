@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <style>
+    .imgDiv img {
+      position: absolute;
+      width: 400px;
+      height: 600px;
+    }
+
+    .imgDiv>#after {
+      opacity: 0;
+      transition: opacity 3s
+    }
+
+    .imgDiv:hover>#after {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="imgDiv">
+    <img src="gogh1.jpg" alt="고흐 자화상입니다.">
+    <img id="after" src="gogh2.jpg" alt="고흐 자화상입니다.">
+  </div>
+</body>
+
+</html>

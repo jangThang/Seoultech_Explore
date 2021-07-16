@@ -1,0 +1,100 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="memories.mp3" autoplay controls loop></audio>
+  <title>도서관 문제1</title>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("library.png") no-repeat fixed center top green;
+      background-size: contain;
+    }
+  </style>
+  <script>
+    var right = "7";
+  </script>
+  <script src="wsd.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>도서관</h2>
+    </div>
+  </header>
+  <section>
+    <p>
+      이번에는 도서관을 가볼까?<br>
+      아직도 내 학생증으로 들어갈 수 있네<br>
+      정말 나 졸업한 거 맞는건가 ㅋㅋ<br>
+    </p>
+    <p>
+      그나저나 도서관의 시계는 뭔가 이상했다.<br>
+      완전히 무작위로 움직이는 것은 아닌 거 같고,<br>
+      어떤 규칙에 따라 움직이는 것 같았다.
+    </p><br>
+    <article>
+      <figure class="center">
+        <img src="s.png" width="200" height="200">
+        <img src="e.png" width="200" height="200">
+        <img src="v.png" width="200" height="200">
+        <img src="2.png" width="200" height="200">
+        <img src="n.png" width="200" height="200">
+      </figure>
+      <p>다음 그림은 시계의 시침과 분침을 규칙에 따라 순서대로 나열한 것이다.<br>
+        빈 시계에 들어갈 시각의 시간과 분의 합을 구하시오</p>
+      <p> ex) 9시 55분 => 9+55=64</p>
+    </article><br>
+    <article>
+      <form name="question" id="ques" onsubmit="return false;">
+        <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+        <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+      </form>
+      <div id="next" style="display: none">
+        <a href="Quiz12.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+      </div>
+      <br>
+      <br>
+      <br>
+      </form>
+    </article>
+  </section>
+  <aside>
+    <p>진행도</p>
+    <progress value="11" max="16"></progress>
+    <figure>
+      <img src="librarya.png" width="280" height="175" onmouseover="this.src='libraryb.png'" onmouseout="this.src='librarya.png'">
+    </figure>
+  </aside><br><br><br>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400">Music : memories - Bensound.com</th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 이대훈(wheel100@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="memories.mp3" autoplay controls loop></audio>
+  <title>도서관 문제2</title>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    .center {
+      text-align: center;
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+
+    img {
+      margin-right: 30px;
+    }
+
+    body {
+      background: url("library.png") no-repeat fixed center top green;
+      background-size: contain;
+    }
+  </style>
+  <script>
+    var right = "895";
+  </script>
+  <script src="wsd.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>도서관</h2>
+    </div>
+  </header>
+  <section>
+    <p>
+      책 하나를 다 읽은 후, 우연히 출판사 로고의 아이콘을 보았다.<br>
+      그런데 갑자기 로고의 도형과 색깔이 막 바뀌기 시작했다..<br>
+    </p>
+    <article>
+      <figure class="center">
+        <img src="347.png" width="200" height="200">
+        <img src="484.png" width="200" height="200">
+        <img src="621.png" width="200" height="200">
+        <img src="758.png" width="200" height="200">
+      </figure>
+      <p>다음 그림은 어떤 규칙에 따라 그림을 나열해 놓은 것이다
+        마지막 그림에 해당되는 숫자를 쓰시오
+      </p>
+    </article><br>
+    <details>
+      <summary>힌트</summary>
+      <p>RGB</p>
+    </details><br>
+    <article>
+      <form name="question" id="ques" onsubmit="return false;">
+        <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+        <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+      </form>
+      <div id="next" style="display: none">
+        <a href="Quiz13.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+      </div>
+    </article>
+  </section>
+  <aside>
+    <p>진행도</p>
+    <progress value="12" max="16"></progress>
+    <figure>
+      <img src="librarya.png" width="280" height="175" onmouseover="this.src='libraryb.png'" onmouseout="this.src='librarya.png'">
+    </figure>
+  </aside><br><br><br>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400">Music : memories - Bensound.com</th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 이대훈(wheel100@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

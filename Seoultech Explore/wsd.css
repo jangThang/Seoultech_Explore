@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+
+body {
+  text-align: center;
+}
+
+p {
+  font: bold 20px consolas;
+}
+
+article {
+  font: italic bold 20px consolas;
+}
+
+@keyframes textColorAnimation {
+  0% {
+    color: red;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  100% {
+    color: gray;
+  }
+}
+
+#box {
+  padding: 1px;
+  border: 4px dotted green;
+  text-shadow: 3px 3px 5px skyblue;
+}
+
+h2 {
+  text-align: center;
+  animation-name: textColorAnimation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+input[type=text] {
+  /* input 태그 중 type="text"인 것만 선택*/
+
+  width: 80px;
+  padding: 5px;
+
+  background-color: #e7e7e7;
+  border: 1px solid silver;
+}
+
+input[type=button] {
+  width: 100px;
+  padding: 5px;
+
+  background-color: black;
+  color: white;
+  border: 1px solid silver;
+}
+
+table {
+  display: inline-block;
+  font: italic bold 14px consolas;
+}

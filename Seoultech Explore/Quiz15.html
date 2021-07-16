@@ -1,0 +1,195 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="memories.mp3" autoplay controls loop></audio>
+  <title>어의관 문제</title>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("ere.png") no-repeat fixed center top green;
+      background-size: contain;
+      text-align: center;
+    }
+
+    form p {
+      font: italic bold 20px 한컴 쿨재즈 L, 돋움체;
+      margin-bottom: 50px;
+    }
+
+    form hint {
+      display: inline;
+      color: #EAEAEA;
+    }
+
+    r {
+      display: block;
+      text-align: right;
+      font-style: normal;
+      font-size: 15px;
+    }
+
+    form.text {
+      text-align: left;
+      display: inline-block;
+      background: #EAEAEA;
+      border: 1px solid black;
+      width: 800px;
+      padding: 15px;
+    }
+
+    #box {
+      padding: 1px;
+      border: 4px dotted green;
+      text-shadow: 3px 3px 5px skyblue;
+    }
+
+    h1 {
+      font-style: normal;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 200%;
+    }
+
+    span {
+      display: block;
+      font: italic bold 60px consolas;
+      text-shadow: 2px 2px yellow;
+    }
+
+    input[type=contact] {
+
+      width: 100px;
+      padding: 5px;
+
+      background-color: white;
+      border: 1px solid silver;
+    }
+  </style>
+  <script>
+    var right = "368";
+  </script>
+  <script src="wsd.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>어의관</h2>
+    </div>
+  </header>
+  <section>
+    <p>
+      몸도 마음도 점점 지쳐간다.<br>
+      어의관만 둘러보고 얼릉 집으로 돌아가야겠다.<br>
+    </p>
+    <p>
+      어의관 바닥에는 갓 떨어진 듯한 의문의 설문지가 있었다. (Answer Type : 숫자)
+    </p><br>
+    <article>
+      <form class="text">
+        <h1>설문지</h1>
+        <r><input type="date" value="2019-05-28"></r>
+        <br>
+        <r>기초교육학부</r>
+        <hr>
+        <p class="left">
+          모두들 한 학기 동안 수고 많으셨습니다!! 공부할 양도 많고 과제도 만만치 않아<br>
+          스트레스도 많이 쌓이셨을텐데요, 그래서 저희가 간단한 설문조사를 준비했습니다!!<br>
+          부디 잊지 말고 꼭 해주시길 바랍니다!! 설문 조사에 참여하신 학생중 추첨을 통해 <br>
+          호주 9박 10일 여행권을 3분께 드릴 예정입니다. 여러분들의 많은 참여 바랍니다!!
+        </p>
+        <h4>1.당신의 나이는?</h4>
+        <input type="radio" name="grade"> 21살
+        <input type="radio" name="grade"> 22살
+        <input type="radio" name="grade"> 23살
+        <input type="radio" name="grade" checked> 24살<hint>(A)</hint>
+        <h4>2.당신의 거주지와 연락처는? <hint>(B)두번째전번가운데둘셋</hint>
+        </h4>
+        거주지 :
+        <select name="china">
+          <option value="1">노원구</option>
+          <option value="2" selected>의정부시</option>
+          <option value="3">수원시</option>
+          <option value="4">병점동</option>
+        </select>
+        전화번호 :
+        <input type="contact" list="countries">
+        <datalist id="countries">
+          <option value="010-4689-1548">
+          <option value="010-2683-6945">
+          <option value="010-7516-9385">
+        </datalist>
+        <h4>
+          3.지금까지 수강했던 과목을 모두 체크하시오<hint>(C)빈체크박스번호</hint>
+        </h4>
+        이산수학 <input type="checkbox" value="1" checked>
+        웹프로그래밍 <input type="checkbox" value="2" checked>
+        객체지향언어 <input type="checkbox" value="3" checked>
+        현대문화론 <input type="checkbox" value="4">
+        유닉스시스템 <input type="checkbox" value="5" checked>
+        <h4>4.기타 하고싶은 말을 자유롭게 적어주세요</h4>
+        <textarea cols="70" rows="15" placeholder="Initial"></textarea>
+        <r> _..&nbsp; ._. &nbsp;._ &nbsp;__. </r>
+      </form>
+    </article>
+    <article>
+      <br><br>
+      <span>두뇌 풀 가동!!</span>
+      <h3>Q : A+BxC = ?</h3>
+    </article><br>
+    <article>
+      <form name="question" id="ques" onsubmit="return false;">
+        <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+        <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+      </form>
+      <div id="next" style="display: none">
+        <a href="Quiz16.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+      </div>
+
+      <details>
+        <summary>힌트</summary>
+        <img src="full.jpg" width="360" height="480">
+      </details>
+    </article>
+  </section>
+  <aside>
+    <p>진행도</p>
+    <progress value="15" max="16"></progress>
+    <figure>
+      <img src="erea.png" width="280" height="175" onmouseover="this.src='ereb.png'" onmouseout="this.src='erea.png'">
+    </figure>
+  </aside><br><br><br>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400">Music : memories - Bensound.com</th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 이대훈(wheel100@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

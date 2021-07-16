@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="adventure.mp3" autoplay controls loop></audio>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("mugung.jpg") no-repeat fixed center top green;
+      background-size: contain;
+      text-align: center;
+    }
+
+    div div {
+      display: inline-block;
+      border: 3px solid deepskyblue;
+      background: gray;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+    }
+
+    #i:hover {
+      position: relative;
+      left: 20px;
+      background: red;
+    }
+  </style>
+  <script>
+    var right = "freshman";
+  </script>
+  <script src="wsd.js"></script>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>무궁관</h2>
+    </div>
+  </header>
+  <section>
+    <article>
+      <p>무궁관에 도착하자 수업이 끝난것같은 새내기들이 보였다.<br>
+        이상하게 아무도 나에게 시선을 주지 않길래 복학한지 얼마 안되서라고 혼자 생각한다.<br>
+        엘레베이터에 탔지만 가야할 곳은 모른다.</p>
+      <div>
+        <div>4F</div>
+        <div>the</div>
+        <div id="i">man</div>
+        <div>is</div>
+        <div>re</div>
+        <div>al</div><br>
+        <div>3F</div>
+        <div id="i">hr</div>
+        <div>p</div>
+        <div>pre</div>
+        <div id="i">a</div>
+        <div>div</div><br>
+        <div>2F</div>
+        <div id="i">joe</div>
+        <div>PAFF</div>
+        <div id="i">iris</div>
+        <div>Neko</div>
+        <div>Nora</div><br>
+        <div id="i">1F</div>
+        <div>small</div>
+        <div>and</div>
+        <div>big</div>
+        <div id="i">oh</div>
+        <div id="i">crim</div><br>
+      </div>
+
+    </article>
+    <details>
+      <summary>힌트</summary>
+      <p>1.답은 영어<br>2.LAST<br>3.재구성<br>4.본문</p>
+    </details>
+  </section>
+  <article>
+    <form name="question" id="ques" onsubmit="return false;">
+      <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+      <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+    </form>
+    <div id="next" style="display: none">
+      <a href="Quiz5.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+    </div><br><br><br>
+  </article>
+  <aside>
+    <p>진행도</p>
+    <progress value="4" max="17"></progress>
+    <figure>
+      <img src="mogoog.png" width="280" height="175" onmouseover="this.src='mogoogb.png'" onmouseout="this.src='mogoog.png'">
+    </figure>
+  </aside><br><br><br>
+  <hr>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400">Music : adventure - Bensound.com</th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 송승엽(thdtmdduqdhk@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

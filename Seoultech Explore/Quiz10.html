@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="adventure.mp3" autoplay controls loop></audio>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("bunga.jpg") no-repeat fixed center top green;
+      background-size: contain;
+      text-align: center;
+    }
+
+    div div {
+      display: inline-block;
+      border: 3px solid deepskyblue;
+      background: gray;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+    }
+
+    @keyframes textAnimation {
+      0% {
+        font-size: 100%
+      }
+
+      100% {
+        font-size: 150%
+      }
+    }
+
+    #i:hover {
+      animation-name: textAnimation;
+      animation-duration: 1s;
+      animation-iteration-count: ;
+    }
+  </style>
+  <script>
+    var right = "52";
+  </script>
+  <script src="wsd.js"></script>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>붕어방</h2>
+    </div>
+  </header>
+  <article>
+    <p>물고기들에게 정신이 팔려있던 순간<br>
+      주머니에 있던 동전들이 떨어졌다.<br>
+      그 중 하나가 붕어방에 들어가서 보니<br>
+      호수 안에는 똑같은 동전들이 쌓여있었다.</p>
+    <div>
+      <div id="i">o</div>
+      <div id="i">o</div>
+      <div>o</div>
+      <div id="i">o</div>
+      <div>o</div>
+      <div>o</div><br>
+      <div>o</div>
+      <div>o</div>
+      <div id="i">o</div>
+      <div>o</div>
+      <div id="i">o</div>
+      <div id="i">o</div><br>
+    </div>
+    <article>
+      <section>
+        <details>
+          <summary>힌트</summary>
+          <p>1.숫자<br>2.진법</p>
+        </details>
+      </section>
+      <article>
+        <form name="question" id="ques" onsubmit="return false;">
+          <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+          <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+        </form>
+        <div id="next" style="display: none">
+          <a href="Quiz11.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+        </div><br><br><br>
+        </form>
+      </article>
+      <aside>
+        <p>진행도</p>
+        <progress value="10" max="16"></progress>
+        <figure>
+          <img src="fish.png" width="280" height="175" onmouseover="this.src='fishb.png'" onmouseout="this.src='fish.png'">
+        </figure>
+      </aside><br><br><br>
+      <hr>
+      <hr>
+      <footer>
+        <table>
+          <tr>
+            <td rowspan="4">
+              <a href="http://www.seoultech.ac.kr" target="_blank">
+                <figure>
+                  <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+                  <figcaption>서울과학기술대학교</figcaption>
+                </figure>
+              </a>
+            </td>
+            <th width="400">Music : adventure - Bensound.com</th>
+            <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+          </tr>
+          <tr>
+            <th>해당 페이지 담당자 : 송승엽(thdtmdduqdhk@naver.com)</th>
+          </tr>
+          <tr>
+            <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+          </tr>
+          <tr>
+            <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+          </tr>
+        </table>
+      </footer>
+</body>
+
+</html>

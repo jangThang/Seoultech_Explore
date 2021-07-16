@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("hyup.jpg") no-repeat fixed center top green;
+      background-size: contain;
+      text-align: center;
+    }
+
+    div {
+      font: italic bold 20px consolas;
+    }
+
+    p {
+      color: white;
+    }
+  </style>
+  <script>
+    var right = "귀신";
+  </script>
+  <script src="wsd.js"></script>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>협동문</h2>
+    </div>
+  </header>
+  <section>
+    <p>
+      오랜만에 학교를 둘러보았다.<br>
+      정말 피곤한 하루였다.<br>
+      시야가 점점 어두워진다...
+    </p>
+    <h2>
+      Clear !! 수고하셨습니다.
+    </h2>
+    <article>
+      <details>
+        <summary>끝?</summary>
+        <p>
+          주인공은 사실 ??
+        </p>
+        <form name="question" id="ques" onsubmit="return false;">
+          <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+          <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+        </form>
+        <div id="next" style="display: none">
+          <a href="Story1.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+        </div>
+      </details>
+  </section>
+  <br>
+  <br>
+  <br>
+  </form>
+  </article>
+  <aside>
+    <video src="outtro.mp4" autoplay controls loop></video>
+    <p>진행도</p>
+    <progress value="16" max="16"></progress>
+  </aside><br><br><br>
+  <hr>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400"></th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 송승엽(thdtmdduqdhk@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

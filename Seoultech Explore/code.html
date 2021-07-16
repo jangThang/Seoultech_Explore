@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+<p>	
+void mycard(int n)<br>
+{<br>
+	int h = 0;<br>
+	int i,j;<br>
+	int k = 0;<br>
+	int sum=0;<br>
+	int bol=0;<br>
+	printf("1에서 ~ %d까지의 숫자 중 마음에 드는 숫자를 생각해 보세요. \n\n\n",(int)(pow(2,n)-1));<br>
+	printf("생각하셨나요? 시작하려면 아무 숫자나 누르시고 엔터를 누르세요.");<br>
+	scanf_s("%d", &k);<br>
+	printf("\n\n");<br>
+
+	for (h = 1; h <= n; h++)<br>
+	{<br>
+		int card[100000] = { 0, };<br>
+		j = 0;<br>
+		printf("----------------------------%d 번 카드------------------------------------------\n", h);<br>
+		for (i = 0; i < pow(2, n - 1); i++)<br>
+		{<br>
+			while (card_check(j, h, n) == 0)<br>
+				j++;<br>
+			card[i] = j;<br>
+			printf("%7d", card[i]);<br>
+			j++;<br>
+		}<br>
+		printf("\n");<br>
+		printf("-------------------------------------------------------------------------------");<br>
+		printf("\n");<br>
+		printf("\n");<br>
+		printf("%d번 카드에 생각한 숫자가 있다면 YES(1번), \n",h);<br>
+		printf("없다면 NO(0번)을 선택해 주시기 바랍니다. : ");<br>
+		scanf_s("%d", &bol);<br>
+		if (bol == 1)<br>
+			sum = sum + (int)pow(2, h-1);<br>
+		printf("\n");<br>
+		printf("\n");<br>
+		printf("\n");<br>
+		<br>
+
+	}<br>
+	printf("당신이 마음에 드는 숫자는 %d입니다.\n\n\n", sum);<br>
+	printf("어때요? 신기하죠!!\n");<br>
+	printf("지금까지 마술의 세계였습니다.\n\n");<br>
+	
+	
+}
+</p>
+  </body>
+</html>

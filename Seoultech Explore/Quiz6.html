@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <audio src="adventure.mp3" autoplay controls loop></audio>
+  <link rel="stylesheet" href="wsd.css" type="text/css">
+  <style>
+    body {
+      background: url("hasung.jpg") no-repeat fixed center top green;
+      background-size: contain;
+      text-align: center;
+    }
+
+    div div {
+      display: inline-block;
+      border: 3px solid deepskyblue;
+      background: gray;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+    }
+
+    div#a:hover {
+      transform: rotate(90deg);
+    }
+
+    div#b:hover {
+      transform: rotate(120deg);
+    }
+
+    div#c:hover {
+      transform: rotate(30deg);
+    }
+
+    div#d:hover {
+      transform: scale(4, 2);
+    }
+  </style>
+  <script>
+    var right = "noux";
+  </script>
+  <script src="wsd.js"></script>
+
+<body>
+  <header>
+    <div id="box">
+      <h2>혜성관</h2>
+    </div>
+  </header>
+  <section>
+    <article>
+    <p>
+      그 미신은 학교에 귀신이 돌아다닌다는 것이다.<br>
+      자기가 죽은지도 모르고 학교를 다닌다는 귀신이야기가<br>
+      풋 새내기때에는 왜이리도 무서웠는지.. 그 때 나도 참 어렸었지<br>
+    </p>
+    <p>
+      혜성관, 새내기 때 여기서 물리실험을 했었었지...<br>
+      그게 언제적 일이야.. 벌써 어..?<br>
+      몇 년 전이지..? 졸업한 것도 기억이 안 나네...<br>
+    </p>
+    <div id="c">apix</div>
+    <div id="b">lize</div>
+    <div id="c">somu</div>
+    <div id="d">koiz</div>
+    <div id="b">ikae</div>
+    <div id="a">xcoz</div>
+  </article>
+    <details>
+      <summary>힌트</summary>
+      <p>1.답은 영어<br>2.대문자<br>3.회전</p>
+    </details>
+  </section>
+  <article>
+    <form name="question" id="ques" onsubmit="return false;">
+      <input type="text" name="answer" placeholder="답 입력" onKeyPress="return keyPress(event)">
+      <input type="button" value="정답 확인" name="getans" onClick="getAnswer()">
+    </form>
+    <div id="next" style="display: none">
+      <a href="Quiz7.html" target="_self"><input type="button" value="다음 단계로" name="clear"></a>
+    </div><br>
+  </article>
+  <aside>
+    <p>진행도</p>
+    <progress value="6" max="16"></progress>
+    <figure>
+      <img src="star.png" width="280" height="175" onmouseover="this.src='starb.png'" onmouseout="this.src='star.png'">
+    </figure>
+  </aside><br><br><br>
+  <hr>
+  <hr>
+  <footer>
+    <table>
+      <tr>
+        <td rowspan="4">
+          <a href="http://www.seoultech.ac.kr" target="_blank">
+            <figure>
+              <img src="logo.png" alt="학교 로고입니다." width="100" height="70">
+              <figcaption>서울과학기술대학교</figcaption>
+            </figure>
+          </a>
+        </td>
+        <th width="400">Music : adventure - Bensound.com</th>
+        <th rowspan="4"><img src="ccl.jpg" alt="저작권표시입니다." width="100" height="50"></th>
+      </tr>
+      <tr>
+        <th>해당 페이지 담당자 : 송승엽(thdtmdduqdhk@naver.com)</th>
+      </tr>
+      <tr>
+        <th>기획/개발 : SWD(Seoultech Web Developors)</th>
+      </tr>
+      <tr>
+        <th>홈페이지 : <a href="http://www.seoultech.ac.kr" target="_blank">http://www.seoultech.ac.kr</a></th>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

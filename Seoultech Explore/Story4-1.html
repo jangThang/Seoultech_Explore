@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <style>
+    .imgDiv img {
+      position: absolute;
+      width: 500px;
+      height: 600px;
+    }
+
+    .imgDiv>#after {
+      opacity: 0;
+      transition: opacity 3s
+    }
+
+    .imgDiv:hover>#after {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="imgDiv">
+    <img src="mirror1.png" alt="거울 사진입니다.">
+    <img id="after" src="mirror2.jpg" alt="귀신 사진입니다.">
+  </div>
+</body>
+
+</html>
