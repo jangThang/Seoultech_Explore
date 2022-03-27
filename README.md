@@ -1,53 +1,33 @@
-# Repository Quick Start template
+
+# Seoultech_Explore
 ## Index
   - [Overview](#overview) 
   - [Getting Started](#getting-started)
   - [Contributing](#contributing)
   - [Authors](#authors)
   - [License](#license)
-<!--  Other options to write Readme
-  - [Deployment](#deployment)
-  - [Used or Referenced Projects](Used-or-Referenced-Projects)
--->
-## About RepositoryTemplate
+
+## About Repository
 <!--Wirte one paragraph of project description -->  
-This project's purpose is to create a make Repository with a collection of default settings  
+The purpose of this project is to effectively promote 'SeoulTech' using 'quiz' content.
 
 ## Overview
 <!-- Write Overview about this project -->
-**If you use this template, you can use this function**
-- Issue Template
-- Pull Request Template
-- Commit Template
-- Readme Template
-- Contribute Template
-- Pull Request Build Test(With Github Actions)
+&nbsp; **'Seoul National University of Science and Technology'** is the only national university in Seoul. This project was carried out to solve the problem of low recognition compared to the school's development potential and competency.
+
+&nbsp; **Seoultech Explore** is a web game that explores a school based on a mysterious incident that takes place at Seoul National University of Science and Technology. Each school building has a nonsense quiz, and it is a 'web labyrinth' game in which the next story can only be progressed after solving the quiz.
+
+[Project Description (detail)](https://star7sss.tistory.com/330?category=913213) (My Blog)
 
 ## Getting Started
-**click `Use this template` and use this template!**
-<!--
-### Depencies
- Write about need to install the software and how to install them 
--->
-### Installing
-<!-- A step by step series of examples that tell you how to get a development 
-env running
+**click `Code - Download ZIP` and  unzip it**
 
-Say what the step will be
+### Play the game
 
-    Give the example
+1. Open `Quiz0.html` file in your browser
+2. Proceed through the game according to the instructions.
+3. As you progress through the game, you can also get save codes.
 
-And repeat
-
-    until finished
--->
-1. Click `Use this template` button 
-2. Create New Repository
-3. Update Readme and Others(Other features are noted in comments.)
-<!--
-## Deployment
- Add additional notes about how to deploy this on a live system
- -->
 ## Contributing
 <!-- Write the way to contribute -->
 I am looking for someone to help with this project. Please advise and point out.  
@@ -56,9 +36,10 @@ of conduct, and the process for submitting pull requests to us.
 
 ## Authors
   - [jangThang](https://github.com/JangThang) - **Wooyoung Jang** - <star7sss@naver.com>
+  - **Seungyeop Song**
+  - **DaeHoon Lee**
 
-See also the list of [contributors](https://github.com/jangThang/readmeTemplate/contributors)
-who participated in this project.
+See also the list of [contributors](https://github.com/jangThang/readmeTemplate/contributors) who participated in this project.
 <!--
 ## Used or Referenced Projects
  - [referenced Project](project link) - **LICENSE** - little-bit introduce
