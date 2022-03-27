@@ -17,7 +17,7 @@ The purpose of this project is to effectively promote 'SeoulTech' using 'quiz' c
 
 &nbsp; **Seoultech Explore** is a web game that explores a school based on a mysterious incident that takes place at Seoul National University of Science and Technology. Each school building has a nonsense quiz, and it is a 'web labyrinth' game in which the next story can only be progressed after solving the quiz.
 
-[Project Description (detail)](https://star7sss.tistory.com/330?category=913213) (My Blog)
+=> [Project Description (detail)](https://star7sss.tistory.com/330) (My Blog)
 
 ## Getting Started
 **click `Code - Download ZIP` and  unzip it**
